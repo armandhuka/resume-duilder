@@ -6,9 +6,12 @@ const PersonalInfo = () => {
 
   return (
     <div className="mb-6">
-      <h1 className="text-3xl font-bold">{personalInfo.name || 'Your Name'}</h1>
-      <p className="text-gray-600">{personalInfo.email || 'Your Email'}</p>
+      <h1 className="text-3xl font-bold text-center">{personalInfo.name || 'Your Name'}</h1>
+      <div className='flex items-center text-center justify-center gap-1'>
       <p className="text-gray-600">{personalInfo.phone || 'Your Phone Number'}</p>
+      <p>|</p>
+      <p className="text-gray-600">{personalInfo.email || 'Your Email'}</p>
+      </div>
       <p className="text-gray-600">{personalInfo.summary || 'Your Summary'}</p> {/* Display Summary */}
       {personalInfo.linkedin && (
         <p className="text-gray-600">
