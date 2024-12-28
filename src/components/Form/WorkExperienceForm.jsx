@@ -56,7 +56,7 @@ const WorkExperienceForm = () => {
               placeholder="Enter company name"
               value={company}
               onChange={(e) => setCompany(e.target.value)}
-              className="mt-1 block w-full p-2  focus:outline-none focus:ring focus:ring-blue-500"
+              className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500"
               required={!isFresher} // Make required if not fresher
             />
           </label>
